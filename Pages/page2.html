@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ACME pharma</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container-fluid">
+<!-- header with input fields and log columns 8/4 -->
+  <div class="row">
+      <form>
+        <div class="col-sm-8">
+          <div class="password_input">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">      
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="logo">
+            <img class=".img-responsive" src="../images/ACMELogo@2x.png" width="auto" height="20">
+          </div>
+        </div>
+      </form>
+  </div>
+    <!--Text columns -->
+  <div class="row">
+    <div class="col-sm-12 green_Text_Big"><h1>ACME Care - helping to get the most out of GenDrug</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 purple_Text_Small">Healthcare resource</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 black_text">
+      <p>
+        Patient support programmes (PSPs) may positively impact outcomes in RAR patients taking GenDrug at 12 months<sup>1</sup>
+      </p>
+      <p>
+        This is an interim analysis of a global study; the primary endpoint is the percentage change in HAQ-DI from baseline to 78 weeks, secondary
+        endpoints include DAS28, CDAI and SDAI<sup>1</sup>
+      </p>
+    </div>
+<!-- 3 columns 6/2/4 charts/buttons/text-->
+  <div class="row"> 
+    <!-- charts img-->
+    <div class="col-sm-6">
+      <!--I decided to go with this layout change because adnotations should be under the chart even when resized.
+         This action will cause a slightly different look of the bottom page layout-->
+      <div class="row">
+        <img src="../images/charts/HAQ-DI.png" id="chart">
+      </div>
+      <!--adnotations for charts-->
+      <div class="row grey_Text">
+        <div class="col-sm-4 centered_element">
+          <div class="color_adnotation" id="blue"></div> Non-PSP users (n=427)
+        </div>
+        <div class="col-sm-4 centered_element">
+          <div class="color_adnotation" id="orange"></div> PSP users (n=425)
+        </div>
+        <!-- Changing information with button click-->
+        <div class="col-sm-4 centered_element" id="chart_info_2">
+          HAQ-DI = Health Assessment Questionnaire Disability Index
+        </div>
+      </div>
+      <div class="row grey_Text">
+        <p class="grey_chart_adnotation">
+          Please see study information for further details. ACME Care is the Patient Support Programme offered to patients who are prescribed GenDrug.
+        </p>
+      </div>
+    </div>
+    <!--column with blue buttons-->
+    <div class="col-sm-2 blue_button_holder">
+      <div class="row button_container purple_Text_Small">
+        <!-- red/purple text changing with button press-->
+              <p id="chart_info_1">
+                <br><br>
+              </p>
+      </div>
+      <div class="row button_container">
+              <button type="button" onclick="HAQ_DI()" class="btn btn-default">HAQ-DI</button>
+      </div>
+      <!-- TO DO : when resizing change text to shorter or set bigger min-width (text out of bounds)--> 
+      <div class="row button_container">
+              <button type="button" onclick="DAS28_CRP()" class="btn btn-default">DAS28 (CRP)</button>
+      </div>
+      <div class="row button_container">
+              <button type="button" onclick="SDAI()" class="btn btn-default">SDAI</button>
+      </div>
+      <div class="row button_container">
+              <button type="button" onclick="CDAI()" class="btn btn-default">CDAI</button>
+      </div>
+
+    </div>
+
+    <!--column with grey text-->
+    <div class="col-sm-4 grey_Text">      
+      <p>
+        As part of ACME Care, patients received one
+        or more of the following; starter pack, call
+        centre/hotline, nursing services, educational
+        material, and injection guide (all countries);
+        refill reminders, email, newsletters, support
+        groups, home delivery and financial
+        assistance, (varied between countries)<sup>1</sup>
+      </p>
+      <p>
+        Adapted from Van der Valk F, et al. 2015.
+        PURE: an ongoing 78-week, multicentre,
+        post-marketing observational study, exploring
+        the effectiveness of GenDrug in the context of
+        utilisation of a patient support programme (PSP).
+        Primary and secondary endpoints are not yet
+        reported.
+      </p>
+    </div>
+
+  
+  </div>
+<!--row with GREEN BUTTONS-->
+    <div class="row"> 
+      <div class="col-sm-12 green_button_holder">
+        <button type="button" class="green_button">
+          PI
+        </button>
+        <button type="button" class="green_button">
+          PSM
+        </button>
+        <button type="button" class="green_button">
+          AE
+        </button>
+        <!--open book-->
+        <button type="button" onclick="book2_click()" class="green_button" data-toggle="modal" data-target="#modalContainer">
+          <img class="green_btn_img" src="../images/buttons/Buttons_book2.png">
+        </button>
+        <!--closed book-->
+        <button type="button" onclick="book_click()" class="green_button" data-toggle="modal" data-target="#modalContainer">
+          <img class="green_btn_img" src="../images/buttons/Buttons_book.png">
+        </button>
+        <button type="button" class="green_button">
+          <img class="green_btn_img" src="../images/buttons/Buttons_human.png">
+        </button>
+      </div>
+    </div>  
+        <!--modal box to be filled-->
+  <div class="modal fade" id="modalContainer" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <!--content loaded from modal_content.html-->
+        </div>
+        <div class="modal_button_close">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      </div>    
+    </div>
+  </div> 
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css"></script>
+<link rel="stylesheet" type="text/css" href="../stylesheets/page2_stylesheet.css"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../scripts/page2_script.js"></script> 
+</html>

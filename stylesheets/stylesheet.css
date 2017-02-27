@@ -1,0 +1,269 @@
+sup{
+    font-size:0.6em;
+}
+
+img{
+    width:100%
+}
+.container-fluid{
+    margin:1em;
+}
+h1{
+    color:#84BD00;
+    font-size: 1.3em;
+}
+
+/*TO DO : correct px to em
+TO DO : pick up correct font styles*/
+
+/*TO DO : correct padding for header and text*/
+.logo, .password_input{
+    padding: 5px;
+    padding-right: 1px;
+    padding-left: 25px;
+    right: 10px;
+    top:10px;
+    float:right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.logo{
+    background: #B41955;
+}
+
+.form-control{
+    width: 3em;
+    height:2em;
+    border-radius: 0px;
+    display:inline-block;
+}
+/*TO DO : resizing webpage should not change the shape of green circle and 
+all 3 circles should be displayed one under another on smaller resolutions*/
+.circle, .img-circle{
+    width:16em;
+    height:16em;
+    border-radius:50%;
+    margin: 0 auto;
+    display: table-cell;
+    color:#fff;
+    line-height:20px;
+    text-align:center;
+    vertical-align: middle; 
+    background: none repeat scroll 0 0 #84BD00
+    
+}
+.btn-default{
+    color:#fff;
+    width: 13em;
+    height: 2.5em;
+    text-align: center;
+    border-radius: 0.4em;
+    box-shadow: 2px 2px 5px #888;
+    border: solid #F2BA44 3px; 
+    background: -linear-gradient(top, #f6e6b4 0%,#F2BA44 30%, #F2BA44 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6e6b4), color-stop(70%,#F2BA44));
+}
+
+.button_container{
+    padding-top:1em;
+}
+/*TO DO : "Up to" text should be higher */
+.green_Text_Big{
+    padding-bottom:2em;
+    padding-top:2em;
+}
+
+.green_Text_Small{
+    color:#84BD00;
+    font-size: 1em;
+    padding-bottom:0.6em;
+}
+.black_text{
+    padding-bottom:1.5em;
+}
+
+.blue_text{
+    text-align: center;
+    color:#7EADD2;
+    padding-bottom: 2em;
+    padding-top:0.5em;
+}
+
+.orange_column{
+    float:right;
+}
+
+.orange_text{
+    color:#F2BA44;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color:#808080;
+    padding-bottom:0.5em; 
+    padding-top:0.5em;
+    width:15em;
+}
+
+.bigNumber{
+    font-size:5em;
+}
+
+.grey_Text{
+    font-size:0.8em;
+    color:#808080;
+}
+/*TO DO : should be visible when modal box is active change z index in JS using button press event*/
+.green_button{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 0.3em;
+    background-color: #64AA55;
+    width: 3em;
+    height: 3em; 
+    box-shadow: inset -2px -2px 3px rgba(0,0,0,0.8),
+    inset 2px 2px 3px rgba(255,255,255,0.8);
+    color:#fff;   
+    border:none;
+    margin-left:0.2em;
+    margin-bottom:0.4em;
+    font-size:1em;
+    z-index: 1061;
+}
+
+.green_btn_img{
+    max-width:100%;
+    max-height:100%;
+}
+
+.modal{
+    background:rgba(255,255,255,0.8) !important;
+}
+.modal-dialog{
+    position: relative;
+    display: table;
+    overflow-y: auto;    
+    overflow-x: auto;
+    width: auto;
+    min-width: 300px; 
+    padding-left:1em;
+}
+
+
+/*TO DO : correct padding for header and text*/
+.modal-content{
+    border:solid #84BD00;
+    border-radius: 10px;
+    padding:1em;
+}
+
+.modal-body{
+    margin:none;
+    padding:none;
+    border:none;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.modal_button_close{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    width:3em;
+    height:3em;
+    border-radius:5px;
+    color:white;
+    background-color:#84BD00;
+}
+
+.close{
+    text-align: center;
+    font-size:3em;
+    color:#fff;
+    opacity:1;
+    width:100%;
+    height:100%;
+}
+/*Table style*/
+#custom_list, #custom_list li:before {
+  list-style: none;
+  content: "-";
+  padding-right: 5px;
+  
+}
+/*First table in index.html*/
+
+/*TO DO: make table borders exactly as they should look*/
+table, th, td {
+    font-size:0.9em;
+    text-align: center;
+    padding: 0.4em;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+th {
+    font-style:normal;
+    background-color: #84BD00;
+    color: white;
+}
+
+.light_green_table{
+    background-color:#e0eebf;
+}
+
+td{
+    border: 1px solid #808080;
+    color:#808080;
+}
+
+.white_left_border{
+    border-left:#fff;
+}
+.white_right_border{
+    border-right:#fff;
+}
+/*thick border bottom*/
+.tbb{
+    border-bottom: 3px solid;
+}
+/*thick border left*/
+.tbl{
+    border-left: 3px solid;
+}
+/*thick border right*/
+.tbr{
+    border-right: 3px solid;
+}
+/*thick border top*/
+.tbt{
+    border-top: 3px solid;
+}
+
+.allign_left_table{
+    text-align: left;
+    color:black;
+}
+
+.allign_right_table{
+    text-align: right;
+}
+/*Second table in index.html*/
+#index_data_table table,#index_data_table th,#index_data_table td{
+    border: 3px solid #fff;
+}
+#index_data_table td{
+    color: black;
+}
+
+#index_data_table tr:nth-child(odd){
+    background: #f9fcf2;
+
+}
+#index_data_table tr:nth-child(even){
+    background: #edf5d9;
+
+}
+#index_data_table .green_font_table{
+    color:#84BD00;
+}

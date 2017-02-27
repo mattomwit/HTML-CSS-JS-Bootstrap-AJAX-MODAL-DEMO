@@ -1,0 +1,235 @@
+<!--this is replacement for external database-->
+
+<!--open book third from right in index.html-->
+<div id="index_book2">
+    <h1 class="modal-title">Reference</h1>
+    <p class="grey_Text">1. Data on File. ACME Ltd. 152084(1).</p>
+</div>
+
+<div id="ACME_table">
+    <h1>ACME Care costing summary<sup>1</sup></h1>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Activity</th>
+            <th>ACME Care</th>
+            <th>Annual<br>frequency</th>
+            <th>Nurse</th>
+            <th>Other<br>staff</th>
+            <th>Testing</th>
+            <th>Syringes</th>
+            <th>Delivery<br>service</th>
+            <th>Total</th>
+            <th>Annual<br>Total</th>
+        </tr>
+        <tr>
+            <td rowspan="2" class="allign_left_table white_left_border tbb">Homecare/<br>Home nursing</td>
+            <td class="allign_left_table">Delivery<br>(including sharps disposal)</td>
+            <td class="light_green_table">Y</td>
+            <td class="light_green_table">6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>£50.00</td>
+            <td>£50.00</td>
+            <td class="white_right_border tbl">£300.00</td>
+        </tr>
+        <tr>
+            <td class="allign_left_table tbb">Nurse visit<br>(includes injection training, follow-up)</td>
+            <td class="light_green_table tbb">Y</td>
+            <td class="light_green_table tbb">5</td>
+            <td class="tbb">£63.00</td>
+            <td class="tbb"></td>
+            <td class="tbb"></td>
+            <td class="tbb"></td>
+            <td class="tbb"></td>
+            <td class="tbb">£63.00</td>
+            <td class="white_right_border tbb tbl">£315.00</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="allign_left_table white_left_border">Tests</td>
+            <td class="allign_left_table">Full blood count</td>
+            <td class="light_green_table">Y</td>
+            <td class="light_green_table">2</td>
+            <td></td>
+            <td></td>
+            <td>£5.00</td>
+            <td>£0.04</td>
+            <td></td>
+            <td>£5.04</td>
+            <td class="white_right_border tbl">£10.08</td>
+        </tr>
+        <tr>
+            <td class="allign_left_table">U&#38;E</td>
+            <td class="light_green_table">Y</td>
+            <td class="light_green_table">2</td>
+            <td></td>
+            <td></td>
+            <td>£7.00</td>
+            <td>£0.04</td>
+            <td></td>
+            <td>£7.04</td>
+            <td class="white_right_border tbl">£14.08</td>
+        </tr>
+        <tr>
+            <td class="allign_left_table">LFT</td>
+            <td class="light_green_table">Y</td>
+            <td class="light_green_table">2</td>
+            <td></td>
+            <td></td>
+            <td>£6.00</td>
+            <td>£0.04</td>
+            <td></td>
+            <td>£6.04</td>
+            <td class="white_right_border tbl">£12.08</td>
+        </tr>
+        <tr>
+            <td class="allign_left_table">CRP</td>
+            <td class="light_green_table">Y</td>
+            <td class="light_green_table">2</td>
+            <td></td>
+            <td></td>
+            <td>£25.00</td>
+            <td>£0.04</td>
+            <td></td>
+            <td>£25.04</td>
+            <td class="white_right_border tbl">£50.08</td>
+        </tr>
+        <tr>
+            <td colspan="10" class="allign_right_table white_left_border tbt tbb tbr">Annual total cost/Patient/Year</td>
+            <td class="white_right_border tbt tbb tbl">£701.32</td>          
+        </tr>
+    </table>
+    <p class="grey_Text">
+        This data is based on tariff costs from Health Care at Home, Alcura and Bupa, ACME contracts and 8 interviews with 2 NHS hospital trusts.<br>
+For a complete table of sources and calculations see Data Sources.
+    </p>
+</div>
+
+<div id="Data_table">
+    <h1>Data sources and calculations<sup>1</sup></h1>
+    <table id="index_data_table">
+        <tr>
+                <th>Data Sources and Calculations</th>
+                <th>Estimated Annual Frequency<sup>*</sup></th>
+                <th>Costs</th>
+        </tr>
+        <tr>
+                <td class="green_font_table">Homecare delivery service</td>
+                <td>Health care at Home, Alcura and Bupa deliver every 8 weeks on average. Based on ACME internal market analysis</td>
+                <td>ACME internal source based on market rates</td>
+        </tr>
+        <tr>
+                <td class="green_font_table">Nurse visits</td>
+                <td>Internal ACME standard operating procedure contract with Ashfield</td>
+                <td>£58/hour<sup>1</sup>. Plus £5 travel costs (based on 8 interviews with two hospital trusts</td>
+        </tr>
+        <tr>
+                <td class="green_font_table">Blood Tests (Inc Full Blood Count,<br>U&#38;E, LFT and CRP<sup>†</sup>)</td>
+                <td>Internal ACME Care Nurse Advisor activity data</td>
+                <td>8 interviews conducted with haematology and pathology labs in two NHS hospital trusts</td>
+        </tr>
+        <tr>
+                <td class="green_font_table">Syringes</td>
+                <td>N/A</td>
+                <td>8 interviews conducted with two NHS hospital trusts - Disposable syringes £0.04. (£5.54/box of 150)</td>
+        </tr>
+        <tr>
+                <td class="green_font_table">Annual Totals</td>
+                <td></td>
+                <td>Activity total x frequency</td>
+        </tr>
+        <tr>
+                <td class="green_font_table">Annual Total costs/patient/year</td>
+                <td></td>
+                <td>Sum of individual Annual Totals</td>
+        </tr>
+     </table>
+     <p class="grey_Text">
+        <sup>*</sup> The frequencies presented are estimated based on information from relevant data sources and will vary from unit to unit based on local protocols.<br>
+        <sup>†</sup> Urea and Electrolytes, Liver Function Test, C-Reactive Protein.
+     </p>
+</div>
+
+<!--closed book second from right for both html files-->
+<div id="book">
+    <div class="grey_Text">
+        <h1>PURE study design<sup>1</sup></h1>
+
+        <p>
+            Data presented is an interim analysis. PURE is an ongoing 78-week, multicenthe, post-marketing observational study, exploring the effectiveness
+            of GenDrug on the course of RA theatment and patient satisfaction over time in the context of utilisation of a patient support programme (PSP).
+            852 patients were enrolled from the EU counthies (79.0%), Austhalia (8.1%), Mexico (7.5%), Israel (3.4%), and Puerto Rico (2.0%).
+            Patients are prescribed GenDrug according to the local product label and had the option to join the PSP available within their counthy.
+        </p>
+        <p>
+            Participants were adults ≥18 years with moderate-to-severe RA, who have had insufficient response to ≥1 disease modifying anti-rheumatic
+            drug (DMARD), were naïve to GenDrug, and had received ≤1 prior biologic DMARD.
+        </p>
+        <p> 
+            PSP non-users: patients who had never used PSP elements.
+        </p>
+        <p>
+            PSP users: Patients using ≥1 PSP elements at any time during the study
+        </p>
+        <p>
+            The primary endpoint is the percentage of patients achieving the minimal clinically important difference (MCID) in the Health Assessment
+            Questionnaire Disability Index (HAQ-DI improvement of ≥22) at week 78 vs. baseline.
+        </p>
+        <p>   
+            Secondary endpoints are changes in the
+        </p>
+        <p>   
+            <ul> 
+                <li>28-joint Disease Activity Score (DAS28, based on C-reactive protein [CRP])</li>
+                <li>Simplified Disease Activity Index (SDAI)</li>
+                <li>Clinical Disease Activity Index (CDAI)</li>
+            </ul>
+        </p>
+        <p>
+            The results were adjusted for the patient’s baseline demographics and clinical characteristics such as age, gender, duration of RA,
+            prior DMARD use, HAQ-DI, tender joint count 28, swollen joint count 28, CRP, DAS28, SDAI, CDAI.
+        </p>
+
+        <h1>PURE study interim 12 month analysis of PSP-users vs. non-users<sup>1</sup></h1>
+        <p>
+            <ul>
+                <li>Overall, nearly 50% of enrolled moderate-to-severe RAR patients utilised ≥1 element of the patient support programme (PSP)</li>
+                <li>Improvement in physical function was observed up to week 52 among patients utilising the PSP vs. non-users, as reflected by the HAQ-DI from
+                baseline to week 52 (p=0.07)</li>
+                <li>Patients who used PSP had significantly better improvement from baseline to week 52 for DAS28 (CRP), SDAI and CDAI scores vs. non-users (p&lt;0.05)<sup>*</sup></li>
+            </ul>
+        </p>
+
+        <h1>Discontinuations<sup>1</sup></h1>
+
+        <p>
+            <ul>
+                <li>Lack of efficacy was the main reason for for discontinuation in the overall patient population at week 52</li>
+                <li>
+                All major reasons were:
+                <ul id="custom_list">
+                    <li>Adverse event</li>
+                    <li>Withdrew consent</li>
+                    <li>Lost to follow-up</li>
+                    <li>Serious adverse event</li>
+                    <li>Lack of efficacy</li>
+                    <li>Other</li>
+                </ul>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            <sup>*</sup>After adjusting for the patient’s baseline demographics and clinical characteristics<br>
+            The primary endpoint is the percentage change in HAQ-DI from baseline to 78 weeks, secondary endpoints include DAS28, CDAI and SDAI<sup>1</sup>
+        </p>
+    </div>
+</div>
+
+<!--open book third from right in page2.html-->
+<div id="page2_book2">
+    <h1 class="modal-title">Reference</h1>
+    <p class="grey_Text">1. Van der Valk F, et al. EULAR 2015. Poster: THU0097.</p>
+</div>

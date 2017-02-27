@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ACME pharma</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container-fluid">
+<!-- header with input fields and log columns 8/4 -->
+  <div class="row">
+      <form>
+        <div class="col-sm-8">
+          <div class="password_input">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">
+            <input type="password" class="form-control">      
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="logo">
+            <img class=".img-responsive" src="./images/ACMELogo@2x.png" width="auto" height="20">
+          </div>
+        </div>
+      </form>
+  </div>
+   <!--Text columns -->
+  <div class="row">
+    <div class="col-sm-12 green_Text_Big"><h1>ACME Care - helping to get the most out of GenDrug</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 green_Text_Small">Healthcare resource</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 black_text">ACME Care may help release resources<sup>1</sup></div>
+  </div>
+<!-- 2 columns 8/4-->
+  <div class="row"> 
+    <div class="col-sm-8">
+      <div class="row blue_text">
+        Using ACME Care in the UK<br>
+        may offer considerable savings<br>
+        each year vs. NHS service provision<sup>1</sup>   
+      </div>
+      <!-- circle pictures-->
+      <div class="row list-group">
+          <div class="col-xs-4">
+            <img src="./images/CorrectedCouple.jpg" class="img-circle">
+          </div>
+          <div class="col-xs-4">
+            <div class="circle">
+              <p>Up to</p>
+              <p><span class="bigNumber">£702</span><br>
+              per patient<sup>*</sup></p>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <img src="./images/111resized.jpg" class="img-circle">
+          </div>  
+      </div>
+      <!--small adnotations-->
+      <div class="col-sm-12 grey_Text">
+        <p>
+          * This data is based on tariff costs from Health Care at Home, Alcura and Bupa, ACME contracts and 8 interviews with 2 NHS hospital trusts.<br>
+          Please see study description for full ACME Care costings.<br>
+          For a complete table of sources and calculations see Data Sources.
+        </p>
+        <p>
+          Please see study information for further details.
+        </p>
+      </div>  
+    </div>
+    <!--column with orange buttons-->
+    <div class="col-sm-4 orange_column">
+      <div class="row">
+        <div class="orange_text">
+          How could ACME Care help<br>
+          you continue to improve care<br>
+          for your patients while<br>
+          optimising resources?
+        </div>
+      </div>
+      <div class="row button_container">
+              <button type="button" onclick="ACME_click()" class="btn btn-default" data-toggle="modal" data-target="#modalContainer">
+                ACME Care costs
+              </button>
+      </div>
+      <div class="row button_container">
+              <button type="button" onclick="Data_click()" class="btn btn-default" data-toggle="modal" data-target="#modalContainer">
+                Data sources
+              </button>
+      </div>
+  </div>
+
+  
+</div>
+<!--row with GREEN BUTTONS-->
+    <div class="row"> 
+      <div class="col-sm-12 green_button_holder">
+        <button type="button" class="green_button">
+          PI
+        </button>
+        <button type="button" class="green_button">
+          PSM
+        </button>
+        <button type="button" class="green_button">
+          AE
+        </button>
+<!--open book-->
+        <button type="button" onclick="book2_click()" class="green_button" data-toggle="modal" data-target="#modalContainer">
+          <img class="green_btn_img" src="./images/buttons/Buttons_book2.png">
+        </button>
+<!--closed book-->
+        <button type="button" onclick="book_click()" class="green_button" data-toggle="modal" data-target="#modalContainer">
+          <img class="green_btn_img" src="./images/buttons/Buttons_book.png">
+        </button>
+        <button type="button" class="green_button">
+          <img class="green_btn_img" src="./images/buttons/Buttons_human.png">
+        </button>
+      </div>
+    </div>  
+        <!--modal box to be filled-->
+  <div class="modal fade" id="modalContainer" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+      <!--content loaded from modal_content.html-->
+        </div>
+        <div class="modal_button_close">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./scripts/index_script.js"></script>
+</html>

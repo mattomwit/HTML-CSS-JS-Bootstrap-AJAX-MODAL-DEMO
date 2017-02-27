@@ -1,0 +1,43 @@
+.purple_Text_Small{
+    color:#B41955;
+    font-size: 1em;
+    padding-bottom:0.6em;
+}
+
+.btn-default{
+    width:100%;
+    border: solid #7fa0c3 3px; 
+    background: -linear-gradient(top, #fff 0%,#7fa0c3 30%, #7fa0c3 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(70%,#7fa0c3));
+}
+
+.button_container{
+    margin-left:2em;
+    height:20%
+}
+
+#chart{
+    display: inline-block;
+    margin-left: 2em;
+    margin-right: 3em;
+}
+
+.color_adnotation{
+    display: inline-block;
+    width:3em;
+    height:1em;
+    margin-left:2em;
+}
+#blue{
+    background-color:#7fa0c3;
+}
+
+#orange{
+    background-color:#F2BA44;
+}
+
+.grey_chart_adnotation{
+    margin:1em;
+    margin-left:3em;
+
+}
